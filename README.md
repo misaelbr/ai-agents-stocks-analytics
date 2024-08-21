@@ -19,15 +19,27 @@ O terceiro agente usa como contexto as análises dos outros dois agentes para in
 Para usar este script, siga os passos abaixo:
 
 1. Renomeie o arquivo `.env-dist` para `.env`. Este arquivo contém as variáveis de ambiente necessárias para a aplicação funcionar. Insira as informações necessárias no arquivo.
+2. Para obter uma chave de API da OpenAI, acesse o [site da OpenAI](https://platform.openai.com/), crie uma conta e gere uma chave de API.
+3. Recomenda-se que você crie um ambiente virtual para instalar as dependências do projeto. Para isso, execute o seguinte comando:
 
-2. Instale as dependências necessárias executando o seguinte comando:
+    ```bash
+    $ python -m venv .venv
+    ```
 
-  ```bash
-  $ pip install -r requirements.txt
-  ```
+4. Ative o ambiente virtual executando o seguinte comando:
 
-3. Uma vez que as dependências estejam instaladas, você pode executar o script usando o seguinte comando:
+    ```bash
+      $ source .venv/bin/activate
+    ```
 
-  ```bash
-  $ streamlit run crewai-stocks.py
-  ```
+5. Instale as dependências necessárias executando o seguinte comando:
+
+    ```bash
+    $ pip install -r requirements.txt
+    ```
+
+6. Uma vez que as dependências estejam instaladas, você pode executar o script usando o seguinte comando:
+
+    ```bash
+    $ streamlit run crewai-stocks.py
+    ```
